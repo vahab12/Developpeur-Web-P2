@@ -1,0 +1,493 @@
+/* ===============================
+            COMMUNS
+================================== */
+
+.fa,
+.fas {
+    display: flex;
+    flex-direction: row;
+    justify-self: left;
+    width: 50%;
+    text-decoration: none;
+    list-style: none;
+    color: rgb(0, 102, 255);
+}
+
+.fa {
+    padding-bottom: 5px;
+}
+
+
+/* ===============================
+            HEADER
+================================== */
+
+
+/* NAVIGATION */
+
+.logo img {
+    width: 120px;
+    padding-left: 30px;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.nav-menu {
+    width: 30%;
+}
+
+.nav-menu ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    text-decoration: none;
+    justify-content: space-around;
+}
+
+.nav-menu ul li a {
+    text-decoration: none;
+}
+
+.nav-menu .menu:hover {
+    border-top: 3px solid rgb(0, 102, 255);
+    color: rgb(0, 102, 255);
+    padding-bottom: 15px;
+}
+
+.nav-menu .inscription {
+    font-weight: bolder;
+    color: blue;
+}
+
+
+/*Midia quérie*/
+
+@media (max-width: 768px) {
+    .nav-menu .menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .menu {
+        margin: 0;
+    }
+    .menu {
+        display: none;
+    }
+    .main-menu-wrapper ul,
+    .main-menu-wrapper:hover ul {
+        display: flex;
+    }
+}
+
+
+/* TITRE ET SOUS TITRE*/
+
+.titre h2 {
+    color: black;
+    padding-left: 30px;
+}
+
+.titre p {
+    color: black;
+    padding-bottom: 5px;
+    padding-left: 30px;
+}
+
+
+/*RECHERCHE*/
+
+.search .map {
+    width: 30px;
+    height: 30px;
+}
+
+.search {
+    display: flex;
+    flex-direction: row;
+    padding-left: 30px;
+}
+
+.search .research {
+    width: 100px;
+    height: 40px;
+    background-color: rgb(88, 88, 255);
+    color: white;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border: none;
+}
+
+.search input {
+    width: 220px;
+    height: 40px;
+    border: 1px solid rgb(230, 230, 230);
+}
+
+.search .map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    border: none;
+    background-color: rgb(221, 221, 221);
+    color: black;
+}
+
+.search .map .fas {
+    color: black;
+}
+
+
+/*FILTRE*/
+
+.title {
+    font-weight: bold;
+    margin-left: -8px;
+}
+
+.filtre ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    width: 50%;
+}
+
+.eco,
+.fam,
+.rem,
+.ani {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid rgb(233, 233, 233);
+    border-radius: 150px;
+    height: 39px;
+    width: 140px;
+    position: relative;
+}
+
+.ani {
+    width: 180px;
+}
+
+.fam {
+    width: 110px;
+}
+
+.eco:hover,
+.fam:hover,
+.rem:hover,
+.ani:hover {
+    border: 2px solid rgb(209, 209, 209);
+    border-radius: 150px;
+    box-shadow: 0px 1px 1px 1px rgb(78, 78, 78);
+}
+
+.eco .title-f,
+.fam .title-f,
+.rem .title-f,
+.ani .title-f {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.fam .title-f {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.rem .title-f {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.ani .title-f {
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+.eco a,
+.fam a,
+.rem a,
+.ani a {
+    margin: auto;
+}
+
+.eco i,
+.fam i,
+.rem i,
+.ani i {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    margin-top: 12px;
+}
+
+.biometric,
+.male,
+.heart,
+.dog {
+    margin-top: 20px;
+    border: 1px solid rgb(255, 255, 255);
+    border-radius: 50px;
+    background-color: rgb(172, 211, 255);
+    height: 41px;
+    width: 41px;
+    position: absolute;
+    left: -2px;
+    top: -1.5px;
+}
+
+
+/*INFO*/
+
+.info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    width: 30%;
+    padding-bottom: 20px;
+    padding-left: 10px;
+}
+
+.info .fas {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(228, 228, 228);
+    background-color: rgb(228, 228, 228);
+    border-radius: 20px;
+    width: 25px;
+    height: 25px;
+}
+
+
+/* ===============================
+            MAIN
+================================== */
+
+
+/*HEBERGEMENT MARSEILLE*/
+
+.title-heb {
+    padding-left: 30px;
+    margin-top: -15px;
+}
+
+.hebergement {
+    background-color: hsl(0, 0%, 91%);
+    width: 60%;
+    height: 650px;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.heb:hover {
+    box-shadow: 3px 3px 3px 3px rgb(204, 204, 204);
+}
+
+.hotel {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.img-heb {
+    width: 250px;
+    height: 150px;
+    border: 5px solid white;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.heb {
+    background: white;
+    border-radius: 20px;
+}
+
+.heb h3 {
+    margin-top: -5px;
+    padding-left: 5px;
+}
+
+.heb p {
+    margin-top: -17px;
+    padding-left: 5px;
+}
+
+.heb ul {
+    margin-left: -35px;
+    margin-top: -13px;
+}
+
+.activity {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.heb-4,
+.heb-5,
+.heb-6 {
+    padding-top: 30px;
+}
+
+.title-down {
+    padding-left: 25px;
+    padding-top: 10px;
+}
+
+
+/*LES PLUS POPULAIRE*/
+
+.title-pup {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: -40px;
+    margin-bottom: -40px;
+}
+
+.title-pup .fa {
+    color: black;
+    font-weight: bold;
+    font-size: larger;
+}
+
+.populaire {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: hsl(0, 0%, 91%);
+    width: 23%;
+    padding: 30px;
+    border-radius: 15px;
+}
+
+.img-pup {
+    width: 150px;
+    height: 150px;
+    border: 3px solid white;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+.image-1 {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 20px;
+}
+
+.image-1:hover {
+    box-shadow: 3px 3px 3px 3px rgb(204, 204, 204);
+}
+
+.populaire .image-1 p {
+    margin-top: -15px;
+    padding-left: 10px;
+}
+
+.populaire .image-1 h3 {
+    padding-left: 10px;
+}
+
+.populaire .image-1 ul {
+    margin-left: -26px;
+    margin-top: 20px;
+}
+
+
+/*ACTIVITE A MARSEILLE*/
+
+.activity-marseille {
+    padding: 30px 0 30px 0;
+}
+
+.activity-marseille h2 {
+    padding-left: 24px;
+}
+
+.img-act-1 {
+    width: 330px;
+    height: 400px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.img-act-2 {
+    width: 330px;
+    height: 160px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.act {
+    border: 2px solid rgb(233, 233, 233);
+    border-radius: 10px;
+    background-color: rgb(255, 254, 254);
+}
+
+.act:hover {
+    box-shadow: 3px 3px 3px 3px rgb(158, 158, 158);
+}
+
+.act h3 {
+    padding-left: 10px;
+}
+
+.act .title-act {
+    height: 30px;
+}
+
+.act-2 {
+    padding-top: 30px;
+}
+
+
+/* ===============================
+            FOOTER
+================================== */
+
+.footer {
+    padding-top: 50px;
+}
+
+.main-footer {
+    background-color: rgb(206, 206, 206);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 150px;
+    margin-left: -300px;
+}
+
+.footer-2 {
+    margin-left: -150px;
+}
+
+.footer-3 {
+    margin-left: -150px;
+}
