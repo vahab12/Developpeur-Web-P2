@@ -10,7 +10,7 @@
     width: 50%;
     text-decoration: none;
     list-style: none;
-    color: rgb(0, 102, 255);
+    color: #0065FC;
 }
 
 .fa {
@@ -53,14 +53,14 @@
 }
 
 .nav-menu .menu:hover {
-    border-top: 3px solid rgb(0, 102, 255);
-    color: rgb(0, 102, 255);
+    border-top: 3px solid #0065FC;
+    color: #0065FC;
     padding-bottom: 15px;
 }
 
 .nav-menu .inscription {
     font-weight: bolder;
-    color: blue;
+    color: #0065FC;
 }
 
 
@@ -71,16 +71,6 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-    }
-    .menu {
-        margin: 0;
-    }
-    .menu {
-        display: none;
-    }
-    .main-menu-wrapper ul,
-    .main-menu-wrapper:hover ul {
-        display: flex;
     }
 }
 
@@ -137,7 +127,7 @@
     border-top-left-radius: 15px;
     border-bottom-left-radius: 15px;
     border: none;
-    background-color: rgb(221, 221, 221);
+    background-color: #F2F2F2;
     color: black;
 }
 
@@ -187,9 +177,9 @@
 .fam:hover,
 .rem:hover,
 .ani:hover {
-    border: 2px solid rgb(209, 209, 209);
+    border: 2px solid#F2F2F2;
     border-radius: 150px;
-    box-shadow: 0px 1px 1px 1px rgb(78, 78, 78);
+    box-shadow: 0px 1px 1px 1px#9b9b9b;
 }
 
 .eco .title-f,
@@ -231,6 +221,7 @@
     align-items: center;
     margin: auto;
     margin-top: 12px;
+    color: #0065FC;
 }
 
 .biometric,
@@ -266,8 +257,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid rgb(228, 228, 228);
-    background-color: rgb(228, 228, 228);
+    border: 1px solid #F2F2F2;
+    background-color: #F2F2F2;
     border-radius: 20px;
     width: 25px;
     height: 25px;
@@ -287,7 +278,7 @@
 }
 
 .hebergement {
-    background-color: hsl(0, 0%, 91%);
+    background-color: #F2F2F2;
     width: 60%;
     height: 650px;
     padding: 30px;
@@ -379,7 +370,7 @@
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    background-color: hsl(0, 0%, 91%);
+    background-color: #F2F2F2;
     width: 23%;
     padding: 30px;
     border-radius: 15px;
@@ -476,7 +467,7 @@
 }
 
 .main-footer {
-    background-color: rgb(206, 206, 206);
+    background-color: #F2F2F2;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
