@@ -7,6 +7,23 @@
     font-family: 'Raleway', sans-serif;
 }
 
+h2 {
+    font-size: 1.4rem;
+}
+
+h3 {
+    font-size: 1.1rem;
+}
+
+.activity h3 {
+    font-size: 1rem;
+    padding-left: 17px;
+}
+
+p {
+    font-size: 0.9rem;
+}
+
 .fa,
 .fas {
     display: flex;
@@ -20,6 +37,10 @@
 
 .fa {
     padding-bottom: 5px;
+}
+
+.fas {
+    color: #d8d8d8;
 }
 
 
@@ -39,6 +60,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    padding-top: 40px;
 }
 
 .nav-menu {
@@ -61,6 +83,10 @@
     width: 130px;
 }
 
+.nav-menu .menu:visited {
+    color: black;
+}
+
 .nav-menu ul li a {
     text-decoration: none;
 }
@@ -72,7 +98,7 @@
 .nav-menu .menu:hover {
     border-top: 3px solid #0065FC;
     color: #0065FC;
-    padding-top: 15px;
+    padding-top: 25px;
 }
 
 .nav-menu .inscription {
@@ -150,7 +176,7 @@
 
 .title {
     font-weight: bold;
-    margin-left: -40px;
+    margin-left: -20px;
 }
 
 .filtre ul {
@@ -162,25 +188,44 @@
     width: 60%;
 }
 
-.eco,
-.fam,
-.rem,
+.eco {
+    display: flex;
+    flex-direction: row;
+    border: 3px solid rgb(233, 233, 233);
+    border-radius: 150px;
+    height: 39px;
+    width: 158px;
+    position: relative;
+}
+
+.fam {
+    display: flex;
+    flex-direction: row;
+    border: 3px solid rgb(233, 233, 233);
+    border-radius: 150px;
+    height: 39px;
+    width: 115px;
+    position: relative;
+}
+
+.rem {
+    display: flex;
+    flex-direction: row;
+    border: 3px solid rgb(233, 233, 233);
+    border-radius: 150px;
+    height: 39px;
+    width: 156px;
+    position: relative;
+}
+
 .ani {
     display: flex;
     flex-direction: row;
     border: 3px solid rgb(233, 233, 233);
     border-radius: 150px;
     height: 39px;
-    width: 140px;
+    width: 195px;
     position: relative;
-}
-
-.ani {
-    width: 180px;
-}
-
-.fam {
-    width: 110px;
 }
 
 .eco:hover,
@@ -192,10 +237,7 @@
     box-shadow: 0px 1px 1px 1px#9b9b9b;
 }
 
-.eco .title-f,
-.fam .title-f,
-.rem .title-f,
-.ani .title-f {
+.eco .title-f {
     margin-right: 10px;
     font-weight: bold;
 }
@@ -260,9 +302,9 @@
     justify-content: space-around;
     align-items: center;
     list-style: none;
-    width: 30%;
+    width: 35%;
     padding-bottom: 20px;
-    padding-left: 10px;
+    padding-left: 5px;
 }
 
 .info .fas {
@@ -274,6 +316,7 @@
     border-radius: 20px;
     width: 25px;
     height: 25px;
+    color: #0065FC;
 }
 
 @media screen and (max-width: 667px) {
@@ -469,6 +512,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+    margin: 15px;
 }
 
 .container {
@@ -503,16 +547,16 @@
 .heb h3 {
     padding-top: 6px;
     margin-top: 0;
-    padding-left: 5px;
+    padding-left: 12px;
 }
 
 .heb p {
     margin-top: -17px;
-    padding-left: 5px;
+    padding-left: 12px;
 }
 
 .heb ul {
-    margin-left: -35px;
+    margin-left: -28px;
     margin-top: -13px;
 }
 
@@ -536,7 +580,8 @@
     justify-content: space-around;
     align-items: center;
     margin-top: -30px;
-    margin-bottom: -10px;
+    margin-bottom: -15px;
+    margin-left: -40px;
 }
 
 .title-pup .fa {
@@ -587,18 +632,18 @@
 
 .populaire .image-1 p {
     margin-top: -15px;
-    padding-left: 10px;
+    padding-left: 20px;
 }
 
 .populaire .image-1 h3 {
-    padding-left: 10px;
+    padding-left: 20px;
     width: 200px;
 }
 
 .star {
     display: flex;
     list-style: none;
-    margin-left: -26px;
+    margin-left: -14px;
     margin-top: 40px;
 }
 
@@ -610,18 +655,19 @@
 /*ACTIVITE A MARSEILLE*/
 
 .activity-marseille {
-    padding: 30px 0 30px 0;
+    padding: 30px 0 50px 0;
 }
 
 .activity-marseille h2 {
-    padding-left: 50px;
+    padding-left: 33px;
 }
 
 .activity {
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     flex-wrap: wrap;
+    padding: 0 30px 0 30px;
 }
 
 .act-1 {
@@ -773,10 +819,8 @@
     .activity {
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
-        padding: 30px;
-        width: 100%;
         height: auto;
     }
     .activity-marseille h2 {
@@ -926,24 +970,26 @@
 ================================== */
 
 .footer {
-    padding-top: 50px;
+    padding: 30px 0 30px 0;
+    background-color: #F2F2F2;
 }
 
 .main-footer {
     background-color: #F2F2F2;
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    padding-left: 150px;
-    margin-left: -300px;
+    justify-content: space-between;
+    width: 75%;
+    padding-left: 40px;
 }
 
+.footer-1,
 .footer-2 {
-    margin-left: -150px;
+    margin-left: 0;
 }
 
 .footer-3 {
-    margin-left: -150px;
+    margin-left: 0px;
 }
 
 @media screen and (max-width: 667px) {
