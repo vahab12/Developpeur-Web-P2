@@ -12,7 +12,7 @@ h2 {
 }
 
 h3 {
-    font-size: 1.1rem;
+    font-size: 1.05rem;
 }
 
 .activity h3 {
@@ -302,9 +302,9 @@ p {
     justify-content: space-around;
     align-items: center;
     list-style: none;
-    width: 35%;
+    width: 33%;
     padding-bottom: 20px;
-    padding-left: 5px;
+    padding-left: 19px
 }
 
 .info .fas {
@@ -320,6 +320,11 @@ p {
 }
 
 @media screen and (max-width: 667px) {
+    /*LOGO*/
+    .logo img {
+        width: 120px;
+        padding-left: 10px;
+    }
     /*MENU*/
     .menu {
         display: none;
@@ -328,9 +333,10 @@ p {
         display: flex;
         justify-content: space-around;
         list-style: none;
-        margin-left: -20px;
-        font-size: 1.5rem;
-        padding-bottom: 30px;
+        margin-left: -30px;
+        border-bottom: 3px solid #F2F2F2;
+        padding-bottom: 16px;
+        width: 400px;
     }
     .menu-2 {
         color: black;
@@ -340,7 +346,23 @@ p {
         color: #0065FC;
         padding-bottom: 15px;
     }
+    /*TITRE*/
+    p {
+        font-size: 1rem;
+    }
+    .titre h2 {
+        color: black;
+        padding-left: 10px;
+        width: 90%;
+    }
+    .titre P {
+        padding-left: 10px;
+        padding-bottom: 21px
+    }
     /*SEARCHE*/
+    .search {
+        padding-left: 5px;
+    }
     .search .research-2 {
         display: flex;
         flex-direction: row;
@@ -372,30 +394,36 @@ p {
         flex-wrap: wrap;
         list-style: none;
         height: 220px;
-        margin-left: -10px;
+        margin-left: 0px;
+        width: 100%;
+        padding-left: 0;
+        padding: 0 15px 0 10px;
     }
     .title {
         font-weight: bold;
         width: 100%;
         margin-left: 0;
+        padding-bottom: 0px;
     }
     .eco {
         border: 3px solid rgb(233, 233, 233);
         border-radius: 150px;
         height: 39px;
-        width: 150px;
+        width: 155px;
+        margin-top: -20px;
     }
     .fam {
         border: 3px solid rgb(233, 233, 233);
         border-radius: 150px;
         height: 39px;
-        width: 120px;
+        width: 115px;
+        margin-top: -20px;
     }
     .rem {
         border: 3px solid rgb(233, 233, 233);
         border-radius: 150px;
         height: 39px;
-        width: 140px;
+        width: 152px;
     }
     .ani {
         border: 3px solid rgb(233, 233, 233);
@@ -410,10 +438,15 @@ p {
     .info {
         display: flex;
         flex-direction: row;
-        justify-content: space-around;
+        justify-content: center;
+        align-items: center;
         width: 100%;
-        padding: 60px 0 30px 0;
-        width: 80%;
+        padding: 5px 0 30px 0;
+    }
+    .info span {
+        padding-right: 13px;
+        padding-left: 10px;
+        padding-bottom: 13px;
     }
 }
 
@@ -492,7 +525,7 @@ p {
 /*HEBERGEMENT MARSEILLE*/
 
 .title-heb {
-    padding-left: 30px;
+    padding-left: 15px;
     margin-top: -15px;
 }
 
@@ -742,17 +775,27 @@ p {
         display: flex;
         flex-direction: column-reverse;
         justify-content: space-between;
+        margin: 0;
+        width: 100%;
     }
     /*Les plus populaire*/
     .populaire {
         display: flex;
         flex-direction: column;
-        width: 100%;
-        padding: 10px;
+        width: 378px;
+        padding: 15px;
+        border-radius: 0;
+        padding-bottom: 30px;
+        margin-left: -8px;
+    }
+    .populaire p {
+        font-size: 0.9rem;
     }
     .title-pup {
-        padding-bottom: 50px;
-        padding-top: 30px;
+        padding-top: 15px;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: -25px;
     }
     .image-1 {
         width: 100%;
@@ -760,6 +803,8 @@ p {
     }
     .star {
         margin-top: 0;
+        padding-top: 30px;
+        margin-left: -17px;
     }
     .img-pup {
         width: 100%;
@@ -775,6 +820,13 @@ p {
         width: 160px;
         height: 150px;
     }
+    .heb-2,
+    .heb-3,
+    .heb-4,
+    .heb-5,
+    .heb-6 {
+        padding-top: 30px;
+    }
     /*Hébergements à Marseille*/
     .container {
         display: flex;
@@ -783,37 +835,36 @@ p {
         width: 100%;
         height: auto;
     }
+    .title-heb {
+        padding-top: 10px;
+    }
     .hebergement {
         width: 100%;
-        height: 1800px;
-        margin-top: 30px;
+        height: 1540px;
         padding: 20px;
         background-color: white;
     }
     .img-h {
         width: 100%;
-        height: 175px;
+        height: 140px;
     }
     .img-heb {
         width: 100%;
         height: 100%;
-    }
-    .heb-1,
-    .heb-2,
-    .heb-3,
-    .heb-4,
-    .heb-5,
-    .heb-6 {
-        padding-top: 25px;
     }
     .heb:hover {
         box-shadow: 3px 3px 3px 3px rgb(204, 204, 204);
     }
     .heb {
         background: white;
-        height: 260px;
-        border: 3px solid rgb(235, 235, 235);
+        height: 215px;
+        border: 3px solid rgb(255 255 255);
         border-radius: 20px;
+        box-shadow: 2px 2px 2px 2px rgb(240, 240, 240)
+    }
+    .title-down {
+        padding-left: 10px;
+        padding-top: 10px;
     }
     /*Activité à Maseille*/
     .activity {
@@ -822,23 +873,26 @@ p {
         justify-content: space-between;
         align-items: center;
         height: auto;
+        padding: 0 20px 0 20px;
     }
     .activity-marseille h2 {
-        padding-top: 50px;
+        padding-top: 40px;
+        padding-left: 25px;
     }
-    .ac {
-        padding-top: 25px;
-        padding-bottom: 25px;
-    }
-    .act-1 {
+    .act-1,
+    .act-2 {
         width: 100%;
-        height: 220px;
-        padding-top: 25px;
+        border: 0.1px solid rgb(255 255 255);
+        border-radius: 25px;
+        box-shadow: 2px 2px 2px 2px rgb(240, 240, 240);
+        height: 200px;
+        margin-top: 20px;
     }
     .img-2,
     .img-1 {
         width: 100%;
         height: 155px;
+        border-radius: 25px 25px 0 0
     }
     .img-act-1,
     .img-act-2 {
@@ -993,17 +1047,25 @@ p {
 }
 
 @media screen and (max-width: 667px) {
+    footer {
+        padding: 0;
+        background-color: #F2F2F2;
+        width: 400px;
+        height: 600px;
+        margin-left: -15px;
+    }
     .main-footer {
         display: flex;
         flex-direction: column;
         justify-content: space-around;
         align-items: center;
         text-align: left;
+        padding-left: 10px;
     }
     .footer-2 {
-        padding-left: 100px;
+        margin-left: -60px;
     }
     .footer-3 {
-        padding-left: 50px;
+        margin-left: -100px;
     }
 }
