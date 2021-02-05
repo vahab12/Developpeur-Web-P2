@@ -1063,6 +1063,7 @@
             padding: 0;
             background-color: #F2F2F2;
             margin-left: -15px;
+            margin-right: -15px;
         }
         .main-footer {
             display: flex;
